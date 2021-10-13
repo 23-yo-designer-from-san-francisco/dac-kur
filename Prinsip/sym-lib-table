@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Prinsip)(type Legacy)(uri ${KIPRJMOD}/Prinsip.lib)(options "")(descr ""))
+  (lib (name Принципиально-rescue)(type Legacy)(uri C:/Users/test/Desktop/Принципиально-rescue.lib)(options "")(descr ""))
 )
