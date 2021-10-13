@@ -1134,4 +1134,15 @@ Wire Wire Line
 	13450 3550 13050 3550
 Text GLabel 13450 2550 2    79   Input ~ 0
 CLK
+$Comp
+L Принципиально-rescue:TAB-Prinsip U?
+U 1 1 61723B06
+P 13950 8150
+F 0 "U?" H 14878 8474 50  0001 L CNN
+F 1 "TAB-Prinsip" H 14878 8429 50  0001 L CNN
+F 2 "" H 12600 9250 50  0001 C CNN
+F 3 "" H 12600 9250 50  0001 C CNN
+	1    13950 8150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
