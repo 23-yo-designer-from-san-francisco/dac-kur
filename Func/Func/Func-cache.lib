@@ -1,0 +1,123 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Func_CLK
+#
+DEF Func_CLK U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_CLK" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -450 79 0 0 0 "Тактовый генератор" Normal 0 C C
+S -750 -50 750 -950 0 0 0 N
+X ~ ~ 950 -500 197 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Func_CMP
+#
+DEF Func_CMP U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_CMP" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -650 -100 50 0 0 0 0 Normal 0 C C
+T 0 -650 -800 50 0 0 0 7 Normal 0 C C
+T 0 0 -400 79 0 0 0 "Схема сравнения" Normal 0 C C
+S -700 -50 700 -850 0 0 0 N
+P 6 0 0 0 -800 -100 -700 -100 -750 -100 -750 -800 -800 -800 -700 -800 N
+X ~ ~ 900 -450 197 L 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+# Func_CNT
+#
+DEF Func_CNT U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_CNT" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 300 -200 50 0 0 0 0 Normal 0 C C
+T 0 300 -600 50 0 0 0 7 Normal 0 C C
+T 0 0 -250 79 0 0 0 Счетчик Normal 0 C C
+S -350 -50 350 -750 0 0 0 N
+P 6 0 0 0 350 -200 450 -200 400 -200 400 -600 350 -600 450 -600 N
+X CLK ~ -550 -650 197 R 50 50 1 1 I
+X RST ~ -550 -150 197 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Func_DAC
+#
+DEF Func_DAC U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_DAC" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -200 -100 50 0 0 0 0 Normal 0 C C
+T 0 -200 -500 50 0 0 0 7 Normal 0 C C
+T 0 0 -250 79 0 0 0 ЦАП Normal 0 C C
+S -250 -50 250 -650 0 0 0 N
+P 2 0 0 0 -350 -500 -250 -500 N
+P 2 0 0 0 -350 -100 -250 -100 N
+P 2 0 0 0 -300 -100 -300 -500 N
+X Iout ~ 450 -350 197 L 50 50 1 1 O
+X Iref ~ -450 -600 197 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Func_RECV
+#
+DEF Func_RECV U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_RECV" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 0 -200 50 0 0 0 Осциллограф Normal 0 C C
+S -300 -50 300 -350 0 0 0 N
+X ~ ~ -500 -200 197 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Func_REG
+#
+DEF Func_REG U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_REG" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 -200 -100 50 0 0 0 0 Normal 0 C C
+T 0 200 -100 50 0 0 0 0 Normal 0 C C
+T 0 -200 -550 50 0 0 0 7 Normal 0 C C
+T 0 200 -550 50 0 0 0 7 Normal 0 C C
+T 0 0 -250 79 0 0 0 Регистр Normal 0 C C
+S -250 -50 250 -750 0 0 0 N
+P 2 0 0 0 300 -550 350 -550 N
+P 5 0 0 0 250 -100 350 -100 300 -100 300 -550 250 -550 N
+P 7 0 0 0 -350 -100 -250 -100 -300 -100 -300 -550 -350 -550 -300 -550 -250 -550 N
+X CLK ~ -450 -700 197 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# power_VCC
+#
+DEF power_VCC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_VCC" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X VCC 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+#End Library
