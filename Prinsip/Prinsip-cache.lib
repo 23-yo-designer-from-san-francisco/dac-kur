@@ -28,6 +28,219 @@ X ~ 13 -550 0 300 R 50 50 6 1 I
 ENDDRAW
 ENDDEF
 #
+# Prinsip-rescue_+24V-power
+#
+DEF Prinsip-rescue_+24V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Prinsip-rescue_+24V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +24V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_+5V-power
+#
+DEF Prinsip-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "Prinsip-rescue_+5V-power" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_COUNTER-Prinsip
+#
+DEF Prinsip-rescue_COUNTER-Prinsip U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Prinsip-rescue_COUNTER-Prinsip" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 50 -100 50 0 1 1 CT Normal 0 R C
+S -300 -50 350 -1600 1 1 0 N
+P 2 1 1 0 -100 -50 -100 -1600 N
+P 2 1 1 0 150 -50 150 -1600 N
+X A ~ -400 -150 100 R 50 50 1 1 I
+X B ~ -400 -250 100 R 50 50 1 1 I
+X C ~ -400 -350 100 R 50 50 1 1 I
+X CLK ~ -400 -1500 100 R 50 50 1 1 I C
+X D ~ -400 -450 100 R 50 50 1 1 I
+X E ~ -400 -550 100 R 50 50 1 1 I
+X ENP ~ -400 -1000 100 R 50 50 1 1 I
+X ENT ~ -400 -1100 100 R 50 50 1 1 I
+X F ~ -400 -650 100 R 50 50 1 1 I
+X G ~ -400 -750 100 R 50 50 1 1 I
+X H ~ -400 -850 100 R 50 50 1 1 I
+X QA ~ 450 -150 100 L 50 50 1 1 O
+X QB ~ 450 -250 100 L 50 50 1 1 O
+X QC ~ 450 -350 100 L 50 50 1 1 O
+X QD ~ 450 -450 100 L 50 50 1 1 O
+X QE ~ 450 -550 100 L 50 50 1 1 O
+X QF ~ 450 -650 100 L 50 50 1 1 O
+X QG ~ 450 -750 100 L 50 50 1 1 O
+X QH ~ 450 -850 100 L 50 50 1 1 O
+X RST ~ -400 -1350 100 R 50 50 1 1 I
+X ~LOAD ~ -400 -1250 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_Earth-power
+#
+DEF Prinsip-rescue_Earth-power #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "Prinsip-rescue_Earth-power" 0 -150 50 H I C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -25 -75 25 -75 N
+P 2 0 1 0 -5 -100 5 -100 N
+P 2 0 1 0 0 -50 0 0 N
+P 2 0 1 0 50 -50 -50 -50 N
+X Earth 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_R_Small-Device-Принципиально-rescue
+#
+DEF Prinsip-rescue_R_Small-Device-Принципиально-rescue R 0 10 N N 1 F N
+F0 "R" 30 20 50 H V L CNN
+F1 "Prinsip-rescue_R_Small-Device-Принципиально-rescue" 30 -40 50 H V L CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ R_*
+$ENDFPLIST
+DRAW
+S -30 70 30 -70 0 1 8 N
+X ~ 1 0 100 30 D 50 50 1 1 P
+X ~ 2 0 -100 30 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_Resonator-Device-Принципиально-rescue
+#
+DEF Prinsip-rescue_Resonator-Device-Принципиально-rescue Y 0 40 Y N 1 F N
+F0 "Y" 0 225 50 H V C CNN
+F1 "Prinsip-rescue_Resonator-Device-Принципиально-rescue" 0 150 50 H V C CNN
+F2 "" -25 0 50 H I C CNN
+F3 "" -25 0 50 H I C CNN
+$FPLIST
+ Filter*
+ Resonator*
+$ENDFPLIST
+DRAW
+C -95 0 10 0 1 0 F
+C 0 -150 10 0 1 0 F
+C 95 0 10 0 1 0 F
+S -135 -125 -55 -135 0 1 0 F
+S -135 -95 -55 -105 0 1 0 F
+S -40 80 40 -80 0 1 12 N
+S 55 -125 135 -135 0 1 0 F
+S 55 -95 135 -105 0 1 0 F
+P 2 0 1 0 -95 -95 -95 0 N
+P 2 0 1 0 -75 0 -125 0 N
+P 2 0 1 20 -70 -50 -70 50 N
+P 2 0 1 20 70 -50 70 50 N
+P 2 0 1 0 75 0 100 0 N
+P 2 0 1 0 95 0 95 -100 N
+P 4 0 1 0 95 -130 95 -150 -95 -150 -95 -130 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 0 -200 50 U 50 50 1 1 P
+X 3 3 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_SW_DIP_x08-Switch
+#
+DEF Prinsip-rescue_SW_DIP_x08-Switch SW 0 0 Y N 1 F N
+F0 "SW" 0 550 50 H V C CNN
+F1 "Prinsip-rescue_SW_DIP_x08-Switch" 0 -450 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SW?DIP?x8*
+$ENDFPLIST
+DRAW
+C -80 -300 20 0 0 0 N
+C -80 -200 20 0 0 0 N
+C -80 -100 20 0 0 0 N
+C -80 0 20 0 0 0 N
+C -80 100 20 0 0 0 N
+C -80 200 20 0 0 0 N
+C -80 300 20 0 0 0 N
+C -80 400 20 0 0 0 N
+C 80 -300 20 0 0 0 N
+C 80 -200 20 0 0 0 N
+C 80 -100 20 0 0 0 N
+C 80 0 20 0 0 0 N
+C 80 100 20 0 0 0 N
+C 80 200 20 0 0 0 N
+C 80 300 20 0 0 0 N
+C 80 400 20 0 0 0 N
+S -150 500 150 -400 0 1 10 f
+P 2 0 0 0 -60 -294 93 -253 N
+P 2 0 0 0 -60 -194 93 -153 N
+P 2 0 0 0 -60 -94 93 -53 N
+P 2 0 0 0 -60 5 93 46 N
+P 2 0 0 0 -60 105 93 146 N
+P 2 0 0 0 -60 205 93 246 N
+P 2 0 0 0 -60 305 93 346 N
+P 2 0 0 0 -60 405 93 446 N
+X ~ 1 -300 400 200 R 50 50 1 1 P
+X ~ 10 300 -200 200 L 50 50 1 1 P
+X ~ 11 300 -100 200 L 50 50 1 1 P
+X ~ 12 300 0 200 L 50 50 1 1 P
+X ~ 13 300 100 200 L 50 50 1 1 P
+X ~ 14 300 200 200 L 50 50 1 1 P
+X ~ 15 300 300 200 L 50 50 1 1 P
+X ~ 16 300 400 200 L 50 50 1 1 P
+X ~ 2 -300 300 200 R 50 50 1 1 P
+X ~ 3 -300 200 200 R 50 50 1 1 P
+X ~ 4 -300 100 200 R 50 50 1 1 P
+X ~ 5 -300 0 200 R 50 50 1 1 P
+X ~ 6 -300 -100 200 R 50 50 1 1 P
+X ~ 7 -300 -200 200 R 50 50 1 1 P
+X ~ 8 -300 -300 200 R 50 50 1 1 P
+X ~ 9 300 -300 200 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Prinsip-rescue_TAB-Prinsip-Принципиально-rescue
+#
+DEF Prinsip-rescue_TAB-Prinsip-Принципиально-rescue U 0 40 Y Y 1 F N
+F0 "U" -1350 1100 50 H V C CNN
+F1 "Prinsip-rescue_TAB-Prinsip-Принципиально-rescue" -1150 1200 50 H V C CNN
+F2 "" -1350 1100 50 H I C CNN
+F3 "" -1350 1100 50 H I C CNN
+DRAW
+T 0 -700 500 50 0 0 0 # Italic 1 C C
+T 0 -700 350 50 0 0 0 0 Italic 0 C C
+T 0 -700 200 50 0 0 0 1 Italic 0 C C
+T 0 450 200 50 0 0 0 GND Italic 0 C C
+T 0 450 350 50 0 0 0 VCC Italic 0 C C
+T 0 50 650 50 0 0 0 XP1 Italic 0 C C
+T 0 -400 200 50 0 0 0 Земля Italic 0 C C
+T 0 -250 500 50 0 0 0 Назначение Italic 1 C C
+T 0 600 500 50 0 0 0 Обозначение Italic 1 C C
+T 0 -250 350 50 0 0 0 "Питание +5В" Italic 0 C C
+T 0 0 0 50 0 0 0 "Разъём питания" Italic 0 C C
+S -750 250 900 100 0 0 0 N
+S -750 400 900 250 0 0 0 N
+S -750 550 900 400 0 0 0 N
+S -600 550 300 100 0 0 0 N
+ENDDRAW
+ENDDEF
+#
 # Prinsip_74199N
 #
 DEF Prinsip_74199N U 0 40 Y Y 1 F N
@@ -150,42 +363,6 @@ X ~ 6 500 0 300 L 50 50 2 1 O I
 ENDDRAW
 ENDDEF
 #
-# Prinsip_COUNTER
-#
-DEF Prinsip_COUNTER U 0 40 Y Y 1 F N
-F0 "U" 0 0 50 H V C CNN
-F1 "Prinsip_COUNTER" 0 0 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-T 0 50 -100 50 0 1 1 CT Normal 0 R C
-S -300 -50 350 -1600 1 1 0 N
-P 2 1 1 0 -100 -50 -100 -1600 N
-P 2 1 1 0 150 -50 150 -1600 N
-X A ~ -400 -150 100 R 50 50 1 1 I
-X B ~ -400 -250 100 R 50 50 1 1 I
-X C ~ -400 -350 100 R 50 50 1 1 I
-X CLK ~ -400 -1500 100 R 50 50 1 1 I C
-X D ~ -400 -450 100 R 50 50 1 1 I
-X E ~ -400 -550 100 R 50 50 1 1 I
-X ENP ~ -400 -1000 100 R 50 50 1 1 I
-X ENT ~ -400 -1100 100 R 50 50 1 1 I
-X F ~ -400 -650 100 R 50 50 1 1 I
-X G ~ -400 -750 100 R 50 50 1 1 I
-X H ~ -400 -850 100 R 50 50 1 1 I
-X QA ~ 450 -150 100 L 50 50 1 1 O
-X QB ~ 450 -250 100 L 50 50 1 1 O
-X QC ~ 450 -350 100 L 50 50 1 1 O
-X QD ~ 450 -450 100 L 50 50 1 1 O
-X QE ~ 450 -550 100 L 50 50 1 1 O
-X QF ~ 450 -650 100 L 50 50 1 1 O
-X QG ~ 450 -750 100 L 50 50 1 1 O
-X QH ~ 450 -850 100 L 50 50 1 1 O
-X RST ~ -400 -1350 100 R 50 50 1 1 I
-X ~LOAD ~ -400 -1250 100 R 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
 # Prinsip_DAC
 #
 DEF Prinsip_DAC U 0 40 Y Y 1 F N
@@ -211,180 +388,18 @@ X Uоп ~ -400 -1000 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_DIP_x08
+# rescue_con-Prinsip
 #
-DEF Switch_SW_DIP_x08 SW 0 0 Y N 1 F N
-F0 "SW" 0 550 50 H V C CNN
-F1 "Switch_SW_DIP_x08" 0 -450 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- SW?DIP?x8*
-$ENDFPLIST
+DEF rescue_con-Prinsip U 0 40 Y Y 1 F N
+F0 "U" 50 300 50 H V C CNN
+F1 "rescue_con-Prinsip" -100 100 50 H V C CNN
+F2 "" 50 300 50 H I C CNN
+F3 "" 50 300 50 H I C CNN
 DRAW
-C -80 -300 20 0 0 0 N
-C -80 -200 20 0 0 0 N
-C -80 -100 20 0 0 0 N
-C -80 0 20 0 0 0 N
-C -80 100 20 0 0 0 N
-C -80 200 20 0 0 0 N
-C -80 300 20 0 0 0 N
-C -80 400 20 0 0 0 N
-C 80 -300 20 0 0 0 N
-C 80 -200 20 0 0 0 N
-C 80 -100 20 0 0 0 N
-C 80 0 20 0 0 0 N
-C 80 100 20 0 0 0 N
-C 80 200 20 0 0 0 N
-C 80 300 20 0 0 0 N
-C 80 400 20 0 0 0 N
-S -150 500 150 -400 0 1 10 f
-P 2 0 0 0 -60 -294 93 -253 N
-P 2 0 0 0 -60 -194 93 -153 N
-P 2 0 0 0 -60 -94 93 -53 N
-P 2 0 0 0 -60 5 93 46 N
-P 2 0 0 0 -60 105 93 146 N
-P 2 0 0 0 -60 205 93 246 N
-P 2 0 0 0 -60 305 93 346 N
-P 2 0 0 0 -60 405 93 446 N
-X ~ 1 -300 400 200 R 50 50 1 1 P
-X ~ 10 300 -200 200 L 50 50 1 1 P
-X ~ 11 300 -100 200 L 50 50 1 1 P
-X ~ 12 300 0 200 L 50 50 1 1 P
-X ~ 13 300 100 200 L 50 50 1 1 P
-X ~ 14 300 200 200 L 50 50 1 1 P
-X ~ 15 300 300 200 L 50 50 1 1 P
-X ~ 16 300 400 200 L 50 50 1 1 P
-X ~ 2 -300 300 200 R 50 50 1 1 P
-X ~ 3 -300 200 200 R 50 50 1 1 P
-X ~ 4 -300 100 200 R 50 50 1 1 P
-X ~ 5 -300 0 200 R 50 50 1 1 P
-X ~ 6 -300 -100 200 R 50 50 1 1 P
-X ~ 7 -300 -200 200 R 50 50 1 1 P
-X ~ 8 -300 -300 200 R 50 50 1 1 P
-X ~ 9 300 -300 200 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# power_+24V
-#
-DEF power_+24V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+24V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +24V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_+5V
-#
-DEF power_+5V #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power_+5V" 0 140 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -30 50 0 100 N
-P 2 0 1 0 0 0 0 100 N
-P 2 0 1 0 0 100 30 50 N
-X +5V 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# power_Earth
-#
-DEF power_Earth #PWR 0 0 Y Y 1 F P
-F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power_Earth" 0 -150 50 H I C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X Earth 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# Принципиально-rescue_R_Small-Device
-#
-DEF Принципиально-rescue_R_Small-Device R 0 10 N N 1 F N
-F0 "R" 30 20 50 H V L CNN
-F1 "Принципиально-rescue_R_Small-Device" 30 -40 50 H V L CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- R_*
-$ENDFPLIST
-DRAW
-S -30 70 30 -70 0 1 8 N
-X ~ 1 0 100 30 D 50 50 1 1 P
-X ~ 2 0 -100 30 U 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Принципиально-rescue_Resonator-Device
-#
-DEF Принципиально-rescue_Resonator-Device Y 0 40 Y N 1 F N
-F0 "Y" 0 225 50 H V C CNN
-F1 "Принципиально-rescue_Resonator-Device" 0 150 50 H V C CNN
-F2 "" -25 0 50 H I C CNN
-F3 "" -25 0 50 H I C CNN
-$FPLIST
- Filter*
- Resonator*
-$ENDFPLIST
-DRAW
-C -95 0 10 0 1 0 F
-C 0 -150 10 0 1 0 F
-C 95 0 10 0 1 0 F
-S -135 -125 -55 -135 0 1 0 F
-S -135 -95 -55 -105 0 1 0 F
-S -40 80 40 -80 0 1 12 N
-S 55 -125 135 -135 0 1 0 F
-S 55 -95 135 -105 0 1 0 F
-P 2 0 1 0 -95 -95 -95 0 N
-P 2 0 1 0 -75 0 -125 0 N
-P 2 0 1 20 -70 -50 -70 50 N
-P 2 0 1 20 70 -50 70 50 N
-P 2 0 1 0 75 0 100 0 N
-P 2 0 1 0 95 0 95 -100 N
-P 4 0 1 0 95 -130 95 -150 -95 -150 -95 -130 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 0 -200 50 U 50 50 1 1 P
-X 3 3 150 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Принципиально-rescue_TAB-Prinsip
-#
-DEF Принципиально-rescue_TAB-Prinsip U 0 40 Y Y 1 F N
-F0 "U" -1350 1100 50 H V C CNN
-F1 "Принципиально-rescue_TAB-Prinsip" -1150 1200 50 H V C CNN
-F2 "" -1350 1100 50 H I C CNN
-F3 "" -1350 1100 50 H I C CNN
-DRAW
-T 0 -700 500 50 0 0 0 # Italic 1 C C
-T 0 -700 350 50 0 0 0 0 Italic 0 C C
-T 0 -700 200 50 0 0 0 1 Italic 0 C C
-T 0 450 200 50 0 0 0 GND Italic 0 C C
-T 0 450 350 50 0 0 0 VCC Italic 0 C C
-T 0 50 650 50 0 0 0 XP1 Italic 0 C C
-T 0 -400 200 50 0 0 0 Земля Italic 0 C C
-T 0 -250 500 50 0 0 0 Назначение Italic 1 C C
-T 0 600 500 50 0 0 0 Обозначение Italic 1 C C
-T 0 -250 350 50 0 0 0 "Питание +5В" Italic 0 C C
-T 0 0 0 50 0 0 0 "Разъём питания" Italic 0 C C
-S -750 250 900 100 0 0 0 N
-S -750 400 900 250 0 0 0 N
-S -750 550 900 400 0 0 0 N
-S -600 550 300 100 0 0 0 N
+S -50 0 -50 -100 0 0 0 N
+S 0 0 0 -100 0 0 0 N
+X ~ ~ -150 -50 100 R 50 50 1 1 I
+X ~ ~ 100 -50 100 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
 #

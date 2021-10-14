@@ -799,7 +799,7 @@ F 3 "" H 15450 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+24V #PWR?
+L Prinsip-rescue:+24V-power #PWR?
 U 1 1 6168DD81
 P 15050 5750
 F 0 "#PWR?" H 15050 5600 50  0001 C CNN
@@ -810,10 +810,10 @@ F 3 "" H 15050 5750 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Switch:SW_DIP_x08 SW?
+L Prinsip-rescue:SW_DIP_x08-Switch SW1
 U 1 1 6169F626
 P 1450 5200
-F 0 "SW?" H 1450 5867 50  0000 C CNN
+F 0 "SW1" H 1450 5867 50  0000 C CNN
 F 1 "SW_DIP_x08" H 1450 5776 50  0000 C CNN
 F 2 "" H 1450 5200 50  0001 C CNN
 F 3 "~" H 1450 5200 50  0001 C CNN
@@ -860,7 +860,7 @@ Connection ~ 1050 5400
 Wire Wire Line
 	1050 5400 1050 5300
 $Comp
-L power:+5V #PWR?
+L Prinsip-rescue:+5V-power #PWR?
 U 1 1 616F5484
 P 1050 4650
 F 0 "#PWR?" H 1050 4500 50  0001 C CNN
@@ -956,7 +956,7 @@ $EndComp
 Text GLabel 14000 6400 0    50   Input ~ 0
 CLK
 $Comp
-L Prinsip:COUNTER DD39
+L Prinsip-rescue:COUNTER-Prinsip DD39
 U 1 1 618F24BD
 P 12850 4800
 F 0 "DD39" H 12833 4915 50  0000 C CNN
@@ -1058,7 +1058,7 @@ F 3 "" H 6700 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Принципиально-rescue:Resonator-Device ZQ1
+L Prinsip-rescue:Resonator-Device-Принципиально-rescue ZQ1
 U 1 1 61684E3A
 P 12900 3550
 F 0 "ZQ1" H 12900 3707 50  0000 C CNN
@@ -1084,7 +1084,7 @@ Wire Wire Line
 Wire Wire Line
 	12350 3550 12350 2550
 $Comp
-L power:Earth #PWR?
+L Prinsip-rescue:Earth-power #PWR?
 U 1 1 616A9422
 P 12900 3750
 F 0 "#PWR?" H 12900 3500 50  0001 C CNN
@@ -1095,7 +1095,7 @@ F 3 "~" H 12900 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Принципиально-rescue:R_Small-Device R2
+L Prinsip-rescue:R_Small-Device-Принципиально-rescue R2
 U 1 1 616AA0CB
 P 13450 3050
 F 0 "R2" H 13509 3050 50  0000 L CNN
@@ -1106,7 +1106,7 @@ F 3 "" H 13450 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Принципиально-rescue:R_Small-Device R1
+L Prinsip-rescue:R_Small-Device-Принципиально-rescue R1
 U 1 1 616AAF02
 P 12900 1800
 F 0 "R1" V 13004 1800 50  0000 C CNN
@@ -1135,7 +1135,7 @@ Wire Wire Line
 Text GLabel 13450 2550 2    79   Input ~ 0
 CLK
 $Comp
-L Принципиально-rescue:TAB-Prinsip U?
+L Prinsip-rescue:TAB-Prinsip-Принципиально-rescue U?
 U 1 1 61723B06
 P 13950 8150
 F 0 "U?" H 14878 8474 50  0001 L CNN
@@ -1145,4 +1145,40 @@ F 3 "" H 12600 9250 50  0001 C CNN
 	1    13950 8150
 	1    0    0    -1  
 $EndComp
+$Comp
+L rescue:con-Prinsip C1
+U 1 1 616915C1
+P 15150 8200
+F 0 "C1" H 15125 8283 50  0000 C CNN
+F 1 "con-Prinsip" H 15125 8284 50  0001 C CNN
+F 2 "" H 15200 8500 50  0001 C CNN
+F 3 "" H 15200 8500 50  0001 C CNN
+	1    15150 8200
+	1    0    0    -1  
+$EndComp
+$Comp
+L rescue:con-Prinsip C2...C4
+U 1 1 6169254A
+P 15150 8600
+F 0 "C2...C4" H 15125 8683 50  0000 C CNN
+F 1 "con-Prinsip" H 15125 8684 50  0001 C CNN
+F 2 "" H 15200 8900 50  0001 C CNN
+F 3 "" H 15200 8900 50  0001 C CNN
+	1    15150 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14850 8000 15000 8000
+Wire Wire Line
+	15000 8000 15000 8250
+Connection ~ 15000 8250
+Wire Wire Line
+	15000 8250 15000 8650
+Wire Wire Line
+	14850 7850 15250 7850
+Wire Wire Line
+	15250 7850 15250 8250
+Connection ~ 15250 8250
+Wire Wire Line
+	15250 8250 15250 8650
 $EndSCHEMATC
