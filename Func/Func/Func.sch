@@ -169,4 +169,10 @@ Wire Wire Line
 	6300 5600 6500 5600
 Wire Wire Line
 	10750 5800 10900 5800
+Entry Wire Line
+	2950 6150 3050 6250
+Text Notes 3000 6200 0    50   ~ 0
+8
+Text Notes 4250 6150 0    50   ~ 0
+8
 $EndSCHEMATC
