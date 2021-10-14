@@ -26,8 +26,11 @@ DRAW
 T 0 -650 -100 50 0 0 0 0 Normal 0 C C
 T 0 -650 -800 50 0 0 0 7 Normal 0 C C
 T 0 0 -400 79 0 0 0 "Схема сравнения" Normal 0 C C
-S -700 -50 700 -850 0 0 0 N
+T 0 -650 -950 50 0 1 1 0 Normal 0 C C
+T 0 -650 -1650 50 0 1 1 7 Normal 0 C C
+S -700 -50 700 -1700 0 0 0 N
 P 6 0 0 0 -800 -100 -700 -100 -750 -100 -750 -800 -800 -800 -700 -800 N
+P 6 1 1 0 -800 -950 -700 -950 -750 -950 -750 -1650 -800 -1650 -700 -1650 N
 X ~ ~ 900 -450 197 L 50 50 1 1 O
 ENDDRAW
 ENDDEF
@@ -70,6 +73,22 @@ X Iref ~ -450 -600 197 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# Func_KEY
+#
+DEF Func_KEY U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "Func_KEY" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+T 0 150 -100 50 0 0 0 0 Normal 0 C C
+T 0 150 -500 50 0 0 0 7 Normal 0 C C
+T 0 0 -250 79 0 0 0 Ключ Normal 0 C C
+S -200 -50 200 -550 0 1 0 N
+P 6 0 0 0 200 -100 300 -100 250 -100 250 -500 200 -500 300 -500 N
+ENDDRAW
+ENDDEF
+#
 # Func_RECV
 #
 DEF Func_RECV U 0 40 Y Y 1 F N
@@ -78,9 +97,9 @@ F1 "Func_RECV" 0 0 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-T 0 0 -200 50 0 0 0 Осциллограф Normal 0 C C
-S -300 -50 300 -350 0 0 0 N
-X ~ ~ -500 -200 197 R 50 50 1 1 I
+T 0 0 -200 79 0 0 0 Осциллограф Normal 0 C C
+S -400 -50 400 -350 0 0 0 N
+X ~ ~ -600 -200 197 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
