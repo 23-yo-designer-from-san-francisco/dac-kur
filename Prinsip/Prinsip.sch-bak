@@ -9,7 +9,7 @@ Date ""
 Rev ""
 Comp "МГТУ им. Н.Э. Баумана\\nгруппа ИУ6-64Б"
 Comment1 "Генератор пилы на ЦАП"
-Comment2 ""
+Comment2 "Прохорова А.В."
 Comment3 "Захаров М.А."
 Comment4 ""
 $EndDescr
@@ -1181,4 +1181,6 @@ Wire Wire Line
 Connection ~ 15250 8250
 Wire Wire Line
 	15250 8250 15250 8650
+Text Notes 15150 8250 0    79   ~ 0
++
 $EndSCHEMATC

@@ -9,7 +9,7 @@ Date ""
 Rev ""
 Comp "МГТУ им. Н.Э. Баумана\\nгруппа ИУ6-64Б"
 Comment1 "Генератор пилы на ЦАП"
-Comment2 ""
+Comment2 "Прохорова А.В."
 Comment3 "Захаров М.А."
 Comment4 ""
 $EndDescr
@@ -1167,20 +1167,28 @@ F 3 "" H 15200 8900 50  0001 C CNN
 	1    15150 8600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	14850 8000 15000 8000
-Wire Wire Line
-	15000 8000 15000 8250
-Connection ~ 15000 8250
-Wire Wire Line
-	15000 8250 15000 8650
-Wire Wire Line
-	14850 7850 15250 7850
-Wire Wire Line
-	15250 7850 15250 8250
-Connection ~ 15250 8250
-Wire Wire Line
-	15250 8250 15250 8650
 Text Notes 15150 8250 0    79   ~ 0
 +
+Wire Wire Line
+	14850 8000 14900 8000
+Wire Wire Line
+	14900 8000 14900 8250
+Wire Wire Line
+	14900 8650 15000 8650
+Wire Wire Line
+	15250 8650 15350 8650
+Wire Wire Line
+	15350 8650 15350 8250
+Wire Wire Line
+	14850 7850 15350 7850
+Wire Wire Line
+	15250 8250 15350 8250
+Connection ~ 15350 8250
+Wire Wire Line
+	15350 8250 15350 7850
+Wire Wire Line
+	15000 8250 14900 8250
+Connection ~ 14900 8250
+Wire Wire Line
+	14900 8250 14900 8650
 $EndSCHEMATC
