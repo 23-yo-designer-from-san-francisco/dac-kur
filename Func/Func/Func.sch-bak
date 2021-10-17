@@ -174,17 +174,19 @@ Text Notes 3000 6200 0    50   ~ 0
 Text Notes 4300 6150 0    50   ~ 0
 8
 Text Notes 5050 6500 0    118  ~ 0
-1
-Text Notes 5050 8100 0    118  ~ 0
 2
-Text Notes 7000 6150 0    118  ~ 0
+Text Notes 5050 8100 0    118  ~ 0
 3
-Text Notes 8850 6150 0    118  ~ 0
+Text Notes 7000 6150 0    118  ~ 0
 4
-Text Notes 10250 6050 0    118  ~ 0
+Text Notes 8850 6150 0    118  ~ 0
 5
+Text Notes 10250 6050 0    118  ~ 0
+6
 Wire Wire Line
 	10750 5800 10900 5800
 Text Notes 11450 6050 0    118  ~ 0
-6
+7
+Text Notes 2700 6400 0    118  ~ 0
+1
 $EndSCHEMATC
